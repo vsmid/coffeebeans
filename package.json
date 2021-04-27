@@ -1,0 +1,36 @@
+{
+  "name": "coffeebeans",
+  "version": "1.0.0",
+  "description": "micro javascript library based on htmlhammer",
+  "main": "index.js",
+  "dependencies": {
+    "htmlhammer": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.17",
+    "@babel/preset-env": "^7.12.17",
+    "@rollup/plugin-node-resolve": "^11.2.0",
+    "rollup": "^2.39.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-terser": "^7.0.2"
+  },
+  "scripts": {
+    "build": "rm -rf ./esm/* && rm -rf ./dist/* && coffee --no-header -o ./esm -c src/* && rollup -c",
+    "rollup": "rollup"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vsmid/coffeebeans.git"
+  },
+  "keywords": [
+    "javascript",
+    "framework",
+    "coffeescript"
+  ],
+  "author": "vedransmid@yeti-it.hr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vsmid/coffeebeans/issues"
+  },
+  "homepage": "https://github.com/vsmid/coffeebeans#readme"
+}
